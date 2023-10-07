@@ -1,6 +1,8 @@
-(pushnew "~/projects/lisp/tiny-routes-realworld-example-app/"
+(pushnew (merge-pathnames (make-pathname :directory '(:relative "realworld-api"))
+                          (uiop:pathname-directory-pathname *load-truename*))
          asdf-utilities:*central-registry*
          :test #'equal)
+
 
 #-asdf3.1 (error "example-clack-app requires ASDF 3.1 because for lower versions pathname does not work for package-inferred systems.")
 (defsystem "example-clack-app"

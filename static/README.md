@@ -1,1 +1,1 @@
-All files from this directory will be accessable at https://localhost:5000/static/
+All files from the ./static/ directory will be accessable at https://localhost:5000/static/

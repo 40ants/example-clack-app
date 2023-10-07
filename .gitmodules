@@ -1,3 +1,6 @@
 [submodule "realworld-frontend"]
 	path = realworld-frontend
 	url = git@github.com:svetlyak40wt/event-driven-web-components-realworld-example-app.git
+[submodule "realworld-api"]
+	path = realworld-api
+	url = git@github.com:svetlyak40wt/tiny-routes-realworld-example-app.git

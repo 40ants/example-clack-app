@@ -7,20 +7,21 @@
   (:export #:start))
 (in-package #:example-clack-app/final)
 
-(declaim (optimize (debug 3) (safety 3)))
-
 (defvar *server* nil)
 
-
-;; (defvar *api-app* (make-instance 'ningle))
 
 (defun main-app (env)
   (let ((method (getf env :request-method))
         (uri (getf env :path-info)))
     (list 200
-          (list :content-type "text/plain; charset=utf-8")
-          (list (format nil "Main App: Processing ~A to ~A"
-                        method uri)))))
+          (list :content-type "text/html; charset=utf-8")
+          (list (format nil "<p>Main App: Processing ~A to ~A"
+                        method uri)
+                "<p>Available routes:"
+                "<p><a href=\"/static/README.md\">/static/README.md</a> - static files without without index pages support"
+                "<p><a href=\"/blog/\">/blog/</a> - static blog pages with index pages support"
+                "<p><a href=\"/admin/\">/admin/</a> - just an example of mounted clack app"
+                "<p><a href=\"/realworld/\">/realworld/</a> - application combining REST API + JS frontend"))))
 
 (defun admin-app (env)
   (let ((method (getf env :request-method))
@@ -29,6 +30,15 @@
           (list :content-type "text/plain; charset=utf-8")
           (list (format nil "Admin App: Processing ~A to ~A"
                         method uri)))))
+
+
+(defparameter *real-app*
+  (lack:builder
+   (:mount "/api" conduit.routes:app-routes)
+   (make-instance 'lack.app.directory:lack-app-directory
+                  :root (asdf:system-relative-pathname
+                         :example-clack-app
+                         "realworld-frontend/"))))
 
 
 (defun start (&key (port 5000))
@@ -57,7 +67,8 @@
                                          :root (asdf:system-relative-pathname
                                                 :example-clack-app
                                                 "blog/")))
-          (:mount "/realworld" conduit.routes:app-routes)
+          (:mount "/realworld" *real-app*)
+
           (:mount "/admin"
                   'admin-app)
           'main-app)
