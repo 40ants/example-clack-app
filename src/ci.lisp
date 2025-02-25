@@ -16,6 +16,7 @@
   :on-pull-request t
   :cache t
   :jobs ((40ants-ci/jobs/linter:linter
+          :checkout-submodules t
           :asdf-systems ("example-clack-app"
                          "example-clack-app-docs"
                          "example-clack-app-tests"))))
@@ -25,7 +26,9 @@
   :by-cron "0 10 * * 1"
   :on-pull-request t
   :cache t
-  :jobs ((build-docs :asdf-system "example-clack-app-docs")))
+  :jobs ((build-docs
+          ;; :checkout-submodules t
+          :asdf-system "example-clack-app-docs")))
 
 
 (defworkflow ci
@@ -34,6 +37,7 @@
   :on-pull-request t
   :cache t
   :jobs ((run-tests
+          :checkout-submodules t
           :asdf-system "example-clack-app"
           :lisp ("sbcl-bin"
                  "ccl-bin")

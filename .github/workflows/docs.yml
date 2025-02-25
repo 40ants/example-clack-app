@@ -24,10 +24,7 @@
       "steps": [
         {
           "name": "Checkout Code",
-          "uses": "actions/checkout@v4",
-          "with": {
-            "submodules": true
-          }
+          "uses": "actions/checkout@v4"
         },
         {
           "name": "Setup Common Lisp Environment",
