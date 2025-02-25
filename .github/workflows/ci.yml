@@ -36,6 +36,14 @@
           "uses": "actions/checkout@v4"
         },
         {
+          "name": "Check current dir",
+          "run": "ls -lh",
+        },
+        {
+          "name": "Check Subdir",
+          "run": "ls -lh realworld-api",
+        },
+        {
           "name": "Setup Common Lisp Environment",
           "uses": "40ants/setup-lisp@v4",
           "with": {
