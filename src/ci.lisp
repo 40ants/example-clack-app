@@ -27,7 +27,7 @@
   :on-pull-request t
   :cache t
   :jobs ((build-docs
-          ;; :checkout-submodules t
+          :checkout-submodules t
           :asdf-system "example-clack-app-docs")))
 
 
