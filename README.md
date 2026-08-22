@@ -45,7 +45,7 @@ You can install this library from Quicklisp, but you want to receive updates qui
 
 <a id="x-28-23A-28-2817-29-20BASE-CHAR-20-2E-20-22EXAMPLE-CLACK-APP-22-29-20PACKAGE-29"></a>
 
-#### [package](edbc) `example-clack-app`
+#### [package](79b1) `example-clack-app`
 
 <a id="x-28EXAMPLE-CLACK-APP-DOCS-2FINDEX-3A-3A-7C-40EXAMPLE-CLACK-APP-3FClasses-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -57,7 +57,7 @@ You can install this library from Quicklisp, but you want to receive updates qui
 
 <a id="x-28EXAMPLE-CLACK-APP-3AHELLO-20CLASS-29"></a>
 
-###### [class](c2d9) `example-clack-app:hello` ()
+###### [class](b53b) `example-clack-app:hello` ()
 
 Example class.
 
@@ -65,7 +65,7 @@ Example class.
 
 <a id="x-28EXAMPLE-CLACK-APP-3AUSER-NAME-20-2840ANTS-DOC-2FLOCATIVES-3AREADER-20EXAMPLE-CLACK-APP-3AHELLO-29-29"></a>
 
-###### [reader](d5df) `example-clack-app:user-name` (hello) (:name)
+###### [reader](b7d5) `example-clack-app:user-name` (hello) (:name)
 
 <a id="x-28EXAMPLE-CLACK-APP-DOCS-2FINDEX-3A-3A-7C-40EXAMPLE-CLACK-APP-3FGenerics-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -73,7 +73,7 @@ Example class.
 
 <a id="x-28EXAMPLE-CLACK-APP-3ASAY-20GENERIC-FUNCTION-29"></a>
 
-##### [generic-function](00fc) `example-clack-app:say` obj
+##### [generic-function](54a1) `example-clack-app:say` obj
 
 Say what should be said.
 
@@ -83,7 +83,7 @@ Say what should be said.
 
 <a id="x-28EXAMPLE-CLACK-APP-3AMAKE-HELLO-20FUNCTION-29"></a>
 
-##### [function](7c9c) `example-clack-app:make-hello` name
+##### [function](d722) `example-clack-app:make-hello` name
 
 Makes hello world example
 
@@ -93,7 +93,7 @@ Makes hello world example
 
 <a id="x-28-23A-28-2823-29-20BASE-CHAR-20-2E-20-22EXAMPLE-CLACK-APP-2FFINAL-22-29-20PACKAGE-29"></a>
 
-#### [package](c02a) `example-clack-app/final`
+#### [package](e774) `example-clack-app/final`
 
 <a id="x-28EXAMPLE-CLACK-APP-DOCS-2FINDEX-3A-3A-7C-40EXAMPLE-CLACK-APP-2FFINAL-3FFunctions-SECTION-7C-2040ANTS-DOC-2FLOCATIVES-3ASECTION-29"></a>
 
@@ -101,19 +101,19 @@ Makes hello world example
 
 <a id="x-28EXAMPLE-CLACK-APP-2FFINAL-3ASTART-20FUNCTION-29"></a>
 
-##### [function](9dd3) `example-clack-app/final:start` &key (port 5000)
+##### [function](bdad) `example-clack-app/final:start` &key (port 5000)
 
 
 [4e6a]: https://40ants.com/example-clack-app/
 [3b29]: https://github.com/40ants/example-clack-app
 [ec46]: https://github.com/40ants/example-clack-app/actions
-[edbc]: https://github.com/40ants/example-clack-app/blob/7d1ee7aa5de35aead57c72d14714091281eda107/src/core.lisp#L1
-[c2d9]: https://github.com/40ants/example-clack-app/blob/7d1ee7aa5de35aead57c72d14714091281eda107/src/core.lisp#L11
-[d5df]: https://github.com/40ants/example-clack-app/blob/7d1ee7aa5de35aead57c72d14714091281eda107/src/core.lisp#L12
-[7c9c]: https://github.com/40ants/example-clack-app/blob/7d1ee7aa5de35aead57c72d14714091281eda107/src/core.lisp#L17
-[00fc]: https://github.com/40ants/example-clack-app/blob/7d1ee7aa5de35aead57c72d14714091281eda107/src/core.lisp#L23
-[c02a]: https://github.com/40ants/example-clack-app/blob/7d1ee7aa5de35aead57c72d14714091281eda107/src/final.lisp#L1
-[9dd3]: https://github.com/40ants/example-clack-app/blob/7d1ee7aa5de35aead57c72d14714091281eda107/src/final.lisp#L45
+[79b1]: https://github.com/40ants/example-clack-app/blob/d133ee124fd59129a93ac0049b1831f972424362/src/core.lisp#L1
+[b53b]: https://github.com/40ants/example-clack-app/blob/d133ee124fd59129a93ac0049b1831f972424362/src/core.lisp#L11
+[b7d5]: https://github.com/40ants/example-clack-app/blob/d133ee124fd59129a93ac0049b1831f972424362/src/core.lisp#L12
+[d722]: https://github.com/40ants/example-clack-app/blob/d133ee124fd59129a93ac0049b1831f972424362/src/core.lisp#L17
+[54a1]: https://github.com/40ants/example-clack-app/blob/d133ee124fd59129a93ac0049b1831f972424362/src/core.lisp#L23
+[e774]: https://github.com/40ants/example-clack-app/blob/d133ee124fd59129a93ac0049b1831f972424362/src/final.lisp#L1
+[bdad]: https://github.com/40ants/example-clack-app/blob/d133ee124fd59129a93ac0049b1831f972424362/src/final.lisp#L45
 [33e8]: https://github.com/40ants/example-clack-app/issues
 [482d]: https://quickdocs.org/clack
 [fdf9]: https://quickdocs.org/conduit
